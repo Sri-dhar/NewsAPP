@@ -1,9 +1,17 @@
 # NewsAPP
 
-![NewsAPP](assets/NewsAPP.png)
+<table>
+  <tr>
+    <td>
+      <img src="assets/NewsAPP.png" alt="NewsAPP" width="300"/>
+    </td>
+    <td>
+      <img src="assets/NewsAPP_dark.png" alt="NewsAPP Dark" width="300"/>
+    </td>
+  </tr>
+</table>
 
 NewsAPP is a simple news reader application written in Rust using the Egui framework and the NewsAPI.
-
 
 ## Table of Contents
 
@@ -49,6 +57,5 @@ After following these steps, the NewsAPP should be running on your local machine
 
 If you are using an Arch-based distribution and have the Wayland display manager running, use the following command instead of "cargo run":
 
-    ```bash
-    WINIT_UNIX_BACKEND=x11 cargo run
-    ```
+```bash
+WINIT_UNIX_BACKEND=x11 cargo run
