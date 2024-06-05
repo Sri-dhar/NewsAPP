@@ -70,25 +70,18 @@ fn render_footer(ctx: &eframe::egui::Context) {
     TopBottomPanel::bottom("footer").show(ctx, |ui| {
         ui.vertical_centered(|ui| {
                 ui.add_space(3.);
-                ui.horizontal(|ui|{
-                    ui.label("Built with :");
-                    ui.hyperlink_to(
-                        RichText::new("egui").text_style(TextStyle::Monospace), 
-                        "https://github.com/emilk/egui"
-                    );
-                });
-                
-
-                ui.horizontal(|ui|{
-                    ui.label("With the help of : ");
-                    ui.hyperlink_to(
-                        RichText::new("creativcoder").text_style(TextStyle::Monospace), 
-                        "https://github.com/creativcoder"
-                    );
-                });
+                ui.hyperlink_to(
+                    RichText::new("Build with egui").text_style(TextStyle::Small), 
+                    "https://github.com/emilk/egui"
+                );
 
                 ui.hyperlink_to(
-                    RichText::new("Sri-dhar/NewsAPP").text_style(TextStyle::Monospace), 
+                    RichText::new("NewsAPI: creativcoder").text_style(TextStyle::Small), 
+                    "https://github.com/creativcoder/headlines/tree/main/newsapi"
+                );
+
+                ui.hyperlink_to(
+                    RichText::new("Sri-dhar/NewsAPP").text_style(TextStyle::Small), 
                     "https://github.com/Sri-dhar/NewsAPP.git"
                 );
                 ui.add_space(3.);
